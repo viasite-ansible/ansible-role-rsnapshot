@@ -1,4 +1,6 @@
-# rsnapshot (master) [![Build Status](https://travis-ci.org/osiell/ansible-rsnapshot-master.png)](https://travis-ci.org/osiell/ansible-rsnapshot-master)
+[![Build Status](https://travis-ci.org/viasite-ansible/ansible-role-rsnapshot.svg?branch=master)](https://travis-ci.org/viasite-ansible/ansible-role-rsnapshot)
+
+# rsnapshot (master)
 
 Ansible role to install and configure a *rsnapshot* master. It works in
 conjunction with the `rsnapshot-slave` role.
@@ -97,7 +99,7 @@ rsnapshot_config_logfile: /var/log/rsnapshot.log
 rsnapshot_config_lockfile: /var/run/rsnapshot.pid
 rsnapshot_config_stop_on_stale_lockfile: 0
 rsnapshot_config_rsync_short_args: False
-rsnapshot_config_rsync_long_args: '--delete --numeric-ids --relative --delete-excluded --rsync-path=rsync-wrapper.sh'
+rsnapshot_config_rsync_long_args: '--delete --numeric-ids --relative --delete-excluded'
 rsnapshot_config_ssh_args: '-i $HOME/.ssh/{{ rsnapshot_ssh_key }}'
 rsnapshot_config_du_args: False
 rsnapshot_config_one_fs: False
